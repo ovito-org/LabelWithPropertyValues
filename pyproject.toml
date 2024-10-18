@@ -3,24 +3,24 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "[[PackageName]]"
-version = "[[Version number]]"
-description = "[[Short description]]"
+name = "LabelWithPropertyValues"
+version = "1.0"
+description = "Viewport overlay for labeling particles and bonds"
 keywords = ["ovito", "ovito-extension"]
-authors = [{name = "[[Author 1 name]]", email = "[[Author 1 email]]"}, {name = "[[Author 2 name]]", email = "[[Author 2 email]]"}]
-maintainers = [{name = "[[Maintainer 1 name]]", email = "[[Maintainer 1 email]]"}]
-license = {text = "[[License]]"}
+authors = [{name = "Constanze Kalcher]", email = "kalcher@ovito.org"}, {name = "Daniel Utt", email = "utt@ovito.org"}]
+maintainers = [{name = "OVITO support", email = "support@ovito.org"}]
+license = {text = "MIT"}
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.10"
 dependencies = [
-    "ovito >= 3.9.2",
+    "ovito >= 3.11",
 ]
 
 [project.urls]
-repository = "[[Repository Link]]"
+repository = "https://github.com/ovito-org/LabelWithPropertyValues"
 
 [project.entry-points.'OVITO.ViewportOverlay']
-"Human Readable Viewport Overlay Name" = "[[PackageName]]:[[ViewportOverlayName]]"
+"Label with property values" = "LabelWithPropertyValues:LabelWithPropertyValues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
